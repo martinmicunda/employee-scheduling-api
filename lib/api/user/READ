@@ -1,0 +1,37 @@
+// In JavaScript Application Design book on page 249 look at diagram  ...
+--lib/
+    user.model.js
+    user.controller.js
+    user.route.js
+--test/
+--index.js
+
+move rhat from API as this will more module oriented
+
+
+http://vimeo.com/89258863 --> Eric Elliott - Modular JavaScript With npm and Node Modules
+When use object?
+Configuration e.g. db
+User data
+Domain objects
+
+anywhere else use functional javascript
+
+
+don't rename module to employees still call it user
+!!!! Auth and Users service will at one service to connected to one database see NodeJs design patterns book page 354
+
+
+should I have follow structure
+
+--lib/
+    model.js
+    controller.js
+    route.js
+
+
+
+good read http://stackoverflow.com/questions/17936515/best-practice-for-structuring-libraries-to-be-required-in-node-js
+
+
+// TODO: multiple databases connection https://github.com/simov/express-admin/blob/master/lib%2Fdb%2Fclient.js
