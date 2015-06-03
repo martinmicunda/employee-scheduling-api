@@ -3,44 +3,41 @@
 var pkg     = require('./package.json');
 var logger  = require('mm-node-logger')(module);
 
-var redis     = require('./lib/config/redis');
 //import koa from 'koa';
 var koa = require('koa');
 let app = koa();
 
-function Person () {
 
-    let fullName = null;
 
-    this.getName = function () {
-        return fullName;
-    };
+var couchbase = require('couchbase');
+var cluster = new couchbase.Cluster('couchbase://127.0.0.1');
+var bucket = cluster.openBucket('default');
 
-    this.setName = function (name) {
-        fullName = name;
-        return this;
-    };
-}
-
-let jon = new Person();
-jon.setName("Jon Doe");
+//bucket.upsert('testdoc', {name:'Frank'}, function(err, result) {
+//    if (err) throw err;
+//
+//    bucket.get('testdoc', function(err, result) {
+//        if (err) throw err;
+//
+//        console.log(result.value);
+//        // {name: Frank}
+//    });
+//});
 
 app.use(function *(){
     let test = 'Hello Word';
-    logger.info('process ' + process.env.MYSQL_DB);
     this.body = test;
-    logger.info(jon.getName());
-    var arr = ['a', 'e', 'i', 'o', 'u'];
-    arr.forEach(vowel => {
-        console.log(vowel);
-    });
+     //var arr = ['a', 'e', 'i', 'o', 'u'];
+    //arr.forEach(vowel => {
+    //    console.log(vowel);
+    //});
 });
 //expressApp.route(apiVersion + '/package')
 //    .get(function(req, res) {
 //        res.status(200).send(require('../package'));
 //    });
 
-app.listen(process.env.APP_PORT, function () {
+app.listen(3000, function () {
     var serverBanner = ['',
     '*************************************' + ' KOA SERVER '.yellow + '********************************************',
     '*',
@@ -52,8 +49,7 @@ app.listen(process.env.APP_PORT, function () {
         '*',
     '*' + ` App started on port: ${process.env.APP_PORT} - with environment: ${process.env.APP_ENV}`.blue,
     '*',
-    '*************************************************************************************************'.green,
+    '*************************************************************************************************',
     ''].join('\n');
     logger.info(serverBanner);
 });
-
