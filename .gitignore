@@ -15,7 +15,6 @@ lib-cov
 coverage
 
 # Dependency directory
-npm-debug.log
 node_modules
 
 # IDEs
@@ -24,4 +23,9 @@ node_modules
 # Build folders for production
 build/
 
+dist/
 gh-pages/
+
+.envrc
+.bash_history
+.cache
