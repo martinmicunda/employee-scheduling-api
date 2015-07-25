@@ -27,18 +27,21 @@ const serverBanner = `
 *
 *********************************************************************************************`;
 
-// Initialize couchbase
-couchbase.init(function startServer() {
-    // Initialize koa
-    const app = koa.init();
+couchbase.setup((initialized) => {
+    // Initialize couchbase
+    couchbase.init(function startServer() {
+        // Initialize koa
+        const app = koa.init();
 
-    // Start up the server on the port specified in the config after we connected to couchbase
-    app.listen(config.server.port, function() {
-        logger.info(serverBanner);
+        // Start up the server on the port specified in the config after we connected to couchbase
+        app.listen(config.server.port, function() {
+            logger.info(serverBanner);
+        });
+
+        /**
+         * Expose `Application`.
+         */
+        module.exports = app;
     });
-
-    /**
-     * Expose `Application`.
-     */
-    module.exports = app;
 });
+// replace laggyluke.direnv with https://github.com/motdotla/dotenv (that specific for nodejs)
