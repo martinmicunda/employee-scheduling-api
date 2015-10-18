@@ -26,6 +26,6 @@ build/
 dist/
 gh-pages/
 
-.envrc
+.env
 .bash_history
 .cache

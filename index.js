@@ -9,10 +9,10 @@
  * Module dependencies.
  */
 var logger    = require('mm-node-logger')(module);
-var pkg       = require('./package.json');
-var koa       = require('./lib/config/koa');
-var config    = require('./lib/config/config');
-var couchbase = require('./lib/config/couchbase');
+import pkg from './package.json';
+import koa from './lib/config/koa';
+import config from './lib/config/config';
+import * as couchbase from './lib/config/couchbase';
 
 const serverBanner = `
 *********************************************************************************************
@@ -27,21 +27,38 @@ const serverBanner = `
 *
 *********************************************************************************************`;
 
-couchbase.setup((initialized) => {
-    // Initialize couchbase
-    couchbase.init(function startServer() {
-        // Initialize koa
-        const app = koa.init();
+//couchbase.setup((initialized) => {
+//    // Initialize couchbase
+//    couchbase.init(function startServer() {
+//        // Initialize koa
+//        const app = koa.init();
+//
+//        // Start up the server on the port specified in the config after we connected to couchbase
+//        app.listen(config.server.port, function() {
+//            logger.info(serverBanner);
+//        });
+//
+//        /**
+//         * Expose `Application`.
+//         */
+//        module.exports = app;
+//    });
+//});
 
-        // Start up the server on the port specified in the config after we connected to couchbase
-        app.listen(config.server.port, function() {
-            logger.info(serverBanner);
-        });
+async function startServer() {
 
-        /**
-         * Expose `Application`.
-         */
-        module.exports = app;
+    // initialize couchbase
+    await couchbase.init();
+
+    // initialize koa
+    const app = koa.init();
+
+    // start up the server on the port specified in the config after we connected to couchbase
+    app.listen(config.server.port, function() {
+        logger.info(serverBanner);
     });
-});
-// replace laggyluke.direnv with https://github.com/motdotla/dotenv (that specific for nodejs)
+
+    return app;
+}
+
+export default startServer();
