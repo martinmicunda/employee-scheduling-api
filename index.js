@@ -5,16 +5,13 @@
  */
 'use strict';
 
-/**
- * Module dependencies.
- */
-var logger    = require('mm-node-logger')(module);
 import pkg from './package.json';
-import koa from './lib/config/koa';
+import * as koa from './lib/config/koa';
 import config from './lib/config/config';
-import * as couchbase from './lib/config/couchbase';
+import couchbase from './lib/config/couchbase';
 
-const serverBanner = `
+const logger = require('mm-node-logger')(module);
+const banner = `
 *********************************************************************************************
 *
 * ${pkg.description}
@@ -23,39 +20,25 @@ const serverBanner = `
 * @copyright 2014-${new Date().getFullYear()} ${pkg.author.name}
 * @license ${pkg.license}
 *
-* ${'App started on port:'.blue} ${config.server.port} ${'- with environment:'.blue} ${config.environment}
-*
 *********************************************************************************************`;
 
-//couchbase.setup((initialized) => {
-//    // Initialize couchbase
-//    couchbase.init(function startServer() {
-//        // Initialize koa
-//        const app = koa.init();
-//
-//        // Start up the server on the port specified in the config after we connected to couchbase
-//        app.listen(config.server.port, function() {
-//            logger.info(serverBanner);
-//        });
-//
-//        /**
-//         * Expose `Application`.
-//         */
-//        module.exports = app;
-//    });
-//});
-
 async function startServer() {
+    console.log(banner);
 
-    // initialize couchbase
-    await couchbase.init();
+    try {
+        await couchbase.connect();
+        logger.info(`Couchbase connected to ${config.couchbase.endPoint.blue} with bucket ${config.couchbase.bucket.blue}`);
+    } catch(error) {
+        logger.error(`Failed to make a connection to the Couchbase Server bucket '${config.couchbase.bucket}':`, error);
+        process.exit(1);
+    }
 
     // initialize koa
     const app = koa.init();
 
     // start up the server on the port specified in the config after we connected to couchbase
-    app.listen(config.server.port, function() {
-        logger.info(serverBanner);
+    app.listen(config.server.port, () => {
+        logger.info(`App started on port ${config.server.port.blue} with environment ${config.environment.blue}`);
     });
 
     return app;

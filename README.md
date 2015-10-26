@@ -1,13 +1,14 @@
 Employee Scheduling API
 =======================
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/martinmicunda/employee-scheduling-api?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://img.shields.io/badge/gitter-join%20chat-1dce73.svg)](https://gitter.im/martinmicunda/employee-scheduling-api?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/martinmicunda/employee-scheduling-api.svg?branch=master)](http://travis-ci.org/martinmicunda/employee-scheduling-api)
 [![Build status](https://ci.appveyor.com/api/projects/status/yy5nh6593c4aaxtn/branch/master?svg=true)](https://ci.appveyor.com/project/martinmicunda/employee-scheduling-api/branch/master)
 [![Dependency Status](https://david-dm.org/martinmicunda/employee-scheduling-api/dev-status.svg)](https://david-dm.org/martinmicunda/employee-scheduling-api#info=dependencies) 
 [![devDependency Status](https://david-dm.org/martinmicunda/employee-scheduling-api/dev-status.svg)](https://david-dm.org/martinmicunda/employee-scheduling-api#info=devDependencies) 
 [![Coverage Status](https://coveralls.io/repos/martinmicunda/employee-scheduling-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/martinmicunda/employee-scheduling-api?branch=master)
 [![Code Climate](https://codeclimate.com/github/martinmicunda/employee-scheduling-api/badges/gpa.svg)](https://codeclimate.com/github/martinmicunda/employee-scheduling-api)
+[![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 
 **Note: :warning: This project is under development.**
 
