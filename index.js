@@ -5,6 +5,10 @@
  */
 'use strict';
 
+// loads environment variables from .env into ENV (process.env)
+import dotenv from 'dotenv';
+dotenv.config({silent: process.env.NODE_ENV !== 'development'});
+
 import pkg from './package.json';
 import * as koa from './lib/config/koa';
 import config from './lib/config/config';
@@ -38,7 +42,7 @@ async function startServer() {
 
     // start up the server on the port specified in the config after we connected to couchbase
     app.listen(config.server.port, () => {
-        logger.info(`App started on port ${config.server.port.blue} with environment ${config.environment.blue}`);
+        logger.info(`App started on port ${config.server.port} with environment ${config.environment.blue}`);
     });
 
     return app;

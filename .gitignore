@@ -29,3 +29,7 @@ gh-pages/
 .env
 .bash_history
 .cache
+
+# DevOps
+*.box
+.vagrant

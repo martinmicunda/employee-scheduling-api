@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config -r babel/register index",
+    "start": "node -r babel/register index",
     "babel": "babel 'lib index.js' --out-dir dist --source-maps",
     "prod": "node ./dist/index",
     "dev": "nodemon --watch 'lib/**/*' --watch 'index.js' --ext 'js json' --exec 'npm start'",
@@ -22,8 +22,8 @@
     "pretest": "npm run lint",
     "test-integ": "newman -c ./EmployeeScheduling.json.postman_collection -f Test -e ./LOCALHOST.postman_environment",
     "postmerge": "npm install",
-    "seed": "node -r dotenv/config -r babel/register ./lib/config/seed.js",
-    "setup": "node -r dotenv/config -r babel/register ./lib/config/setup.js && npm run seed"
+    "seed": "node -r babel/register ./lib/config/seed.js",
+    "setup": "node -r babel/register ./lib/config/setup.js && npm run seed"
   },
   "pre-commit": [
     "lint",
@@ -61,7 +61,7 @@
     "koa-helmet": "0.2.0",
     "koa-logger": "1.3.0",
     "koa-passport": "1.2.0",
-    "koa-joi-router": "2.1.1",
+    "koa-joi-router": "git+https://git@github.com/martinmicunda/koa-joi-router.git",
     "koa-response-time": "1.0.2",
     "koa-methodoverride": "1.0.0",
     "request-promise": "1.0.1",

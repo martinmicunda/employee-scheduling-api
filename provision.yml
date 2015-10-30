@@ -1,0 +1,21 @@
+---
+- name: Install Docker, Docker Compose and NVM
+  hosts: all
+  sudo: yes
+  roles:
+    - franklinkim.docker
+    - franklinkim.docker-compose
+    - moviedo.nvm
+  tasks:
+    - name: add user vagrant to the docker group to avoid type sudo for each docker command
+      user: name=vagrant
+            groups=docker
+            append=yes
+    - name: pull couchbase image
+      docker:
+        name: db
+        image: couchbase/server:enterprise-4.0.0-rc0
+        pull: missing
+  vars:
+    nvm_version: v0.29.0
+    nvm_node_version: v2.2.1
