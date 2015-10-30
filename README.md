@@ -34,8 +34,8 @@ An API component for [Employee Scheduling](https://github.com/martinmicunda/empl
   * Use ES6/ES7
   * Couchbase database with N1QL queries
 
-##<a name="installation-and-configuration"></a> Installation & Configuration
-###<a name="platform-and-tools"></a> Platform & Tools
+##<a name="installation-and-configuration"></a>Installation & Configuration
+###<a name="platform-and-tools"></a>Platform & Tools
 You need to have installed follow tools on your machine:
 
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads) 5.0.6+
@@ -119,7 +119,7 @@ $ npm run seed
 
 Finally, open up your browser and navigate to Couchbase admin UI [http://localhost:8091](http://localhost:8091/) with username: `Administrator` and password: `password`. 
 
-##<a name="how-to-run"></a> How to Run
+##<a name="how-to-run"></a>How to Run
 
 Start the couchbase:
 
@@ -149,10 +149,10 @@ From time to time you might want to reset and seed data; to achieve this you can
 $ npm run seed
 ```
 
-##<a name="how-to-test"></a> How to Test
+##<a name="how-to-test"></a>How to Test
 TODO
 
-##<a name="how-to-test"></a> How to Release
+##<a name="how-to-test"></a>How to Release
 TODO
 
 ## FAQ
