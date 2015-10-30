@@ -44,7 +44,7 @@ You need to have installed follow tools on your machine:
 - [Node.js](https://nodejs.org/en/download/) 0.12.0+
 - [npm](https://www.npmjs.com/) 2.0.0+
 
-###<a name="installation"></a> Installation
+###<a name="installation"></a>Installation
 The steps 3 and 8 are only required when you don't have local instance of Couchbase Server 4.0 configured. If you've already configured a local instance of Couchbase Server 4.0 or newer, the application can use this instance as long as you specify the credentials to connect to Couchbase within the application [config.js](https://github.com/martinmicunda/employee-scheduling-api/blob/master/lib%2Fconfig%2Fconfig.js) file.
 
 **1.** Clone or [fork](https://github.com/martinmicunda/employee-scheduling-api/fork) this repository:
