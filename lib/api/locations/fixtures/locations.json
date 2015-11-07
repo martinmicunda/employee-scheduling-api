@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Location 1",
+        "status": "active",
+        "default": true
+    },
+    {
+        "name": "Location 2",
+        "status": "inactive",
+        "default": false
+    },
+    {
+        "name": "Location 3",
+        "status": "active",
+        "default": false
+    },
+    {
+        "name": "Location 4",
+        "status": "active",
+        "default": false
+    }
+]
