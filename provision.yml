@@ -14,8 +14,8 @@
     - name: pull couchbase image
       docker:
         name: db
-        image: couchbase/server:enterprise-4.0.0-rc0
+        image: couchbase/server:enterprise-4.0.0
         pull: missing
   vars:
     nvm_version: v0.29.0
-    nvm_node_version: v2.2.1
+    nvm_node_version: v4.2.2

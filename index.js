@@ -26,26 +26,29 @@ const banner = `
 *
 *********************************************************************************************`;
 
-async function startServer() {
+function startServer() {
     console.log(banner);
 
-    try {
-        await couchbase.connect();
-        logger.info(`Couchbase connected to ${config.couchbase.endPoint.blue} with bucket ${config.couchbase.bucket.blue}`);
-    } catch(error) {
+    const db = couchbase.connect();
+    db.on('error', (error) => {
         logger.error(`Failed to make a connection to the Couchbase Server bucket '${config.couchbase.bucket}':`, error);
         process.exit(1);
-    }
-
-    // initialize koa
-    const app = koa.init();
-
-    // start up the server on the port specified in the config after we connected to couchbase
-    app.listen(config.server.port, () => {
-        logger.info(`App started on port ${config.server.port} with environment ${config.environment.blue}`);
     });
 
-    return app;
+    db.on('connect', () => {
+        logger.info(`Couchbase connected to ${config.couchbase.endPoint.blue} with bucket ${config.couchbase.bucket.blue}`);
+
+        // initialize koa
+        const app = koa.init();
+
+        // start up the server on the port specified in the config after we connected to couchbase
+        app.listen(config.server.port, () => {
+            logger.info(`App started on port ${config.server.port} with environment ${config.environment.blue}`);
+        });
+
+        return app;
+    });
+
 }
 
 export default startServer();

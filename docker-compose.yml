@@ -5,7 +5,7 @@ api:
   ports:
     - "3000:3000"
 db:
-  image: couchbase/server:enterprise-4.0.0-rc0
+  image: couchbase/server:enterprise-4.0.0
   ports:
     - "8091:8091"
     - "8093:8093"

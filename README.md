@@ -41,7 +41,7 @@ You need to have installed follow tools on your machine:
 - [Virtualbox](https://www.virtualbox.org/wiki/Downloads) 5.0.6+
 - [Vagrant](http://www.vagrantup.com/downloads.html) 1.7.4+
 - [Ansible](http://docs.ansible.com/intro_installation.html) 1.9.4+
-- [Node.js](https://nodejs.org/en/download/) 0.12.0+
+- [Node.js](https://nodejs.org/en/download/) 4.2.2+
 - [npm](https://www.npmjs.com/) 2.0.0+
 
 ###<a name="installation"></a>Installation
@@ -101,7 +101,7 @@ $ vagrant ssh
  and run Couchbase Server:
  
 ```bash
-$ cd employee-scheduling-api
+$ cd api
 $ docker-compose up db
 ```
 
@@ -125,7 +125,7 @@ Start the couchbase:
 
 ```bash
 $ vagrant up && vagrant ssh
-$ cd employee-scheduling-api
+$ cd api
 $ docker-compose up db
 ```
 
