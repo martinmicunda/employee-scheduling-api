@@ -1,11 +1,9 @@
 FROM node:4.2.2
 
-RUN mkdir -p /src
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-WORKDIR /src
-
-ADD . /src
-#COPY . /usr/src/app
+COPY . /usr/src/app
 
 RUN npm install
 

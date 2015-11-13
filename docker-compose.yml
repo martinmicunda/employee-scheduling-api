@@ -1,7 +1,5 @@
 api:
   build: .
-  volumes:
-      - "./:/src/app"
   links:
     - db
   ports:

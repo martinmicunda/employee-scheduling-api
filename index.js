@@ -31,7 +31,7 @@ function startServer() {
 
     const db = couchbase.connect();
     db.on('error', (error) => {
-        logger.error(`Failed to make a connection to the Couchbase Server ${config.couchbase.endPoint.blue} with bucket '${config.couchbase.bucket}':`, error);
+        logger.error(`Failed to make a connection to the Couchbase Server ${config.couchbase.endPoint.blue} with bucket '${config.couchbase.bucket.blue}':`, error);
         process.exit(1);
     });
 

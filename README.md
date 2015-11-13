@@ -86,7 +86,7 @@ franklinkim.docker-compose, 1.1.0
 moviedo.nvm, v1.1.1
 ```
 
-**5.** Now, run `vagrant up` command that will install `Docker`, `Docker Compose`, `NVM` inside of vagrant box and pull couchbase docker image: 
+**5.** Now, run `vagrant up` command that will install `Docker`, `Docker Compose`, `NVM` inside of vagrant box: 
 
 ```bash
 $ vagrant up
@@ -104,6 +104,8 @@ $ vagrant ssh
 $ cd api
 $ docker-compose up db
 ```
+
+>**NOTE:** This process may take a while, when you run this command for the first time as it pull couchbase docker image from docker repository.
 
 **7.**  As we are running the Couchbase Server for the first time we need to make sure the server is configured properly before we start any development. The below command will provision Couchbase Server instance:
 
