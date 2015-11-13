@@ -18,6 +18,5 @@
     "trailing": true,
     "smarttabs": true,
     "white": true,
-    "maxlen": 120,
-    "latedef": true
+    "maxlen": 120
 }

@@ -1,9 +1,11 @@
-FROM iojs:3.3.0
+FROM node:4.2.2
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /src
 
-COPY . /usr/src/app
+WORKDIR /src
+
+ADD . /src
+#COPY . /usr/src/app
 
 RUN npm install
 
