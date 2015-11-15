@@ -1,7 +1,7 @@
 {
   "name": "employee-scheduling-api",
   "version": "0.0.0",
-  "description": "An API component for Employee Scheduling application.",
+  "description": "An API component for Employee Scheduling application that makes employee scheduling management easy, fast and mobile.",
   "author": {
     "name": "Martin Micunda",
     "url": "http://martinmicunda.com"
