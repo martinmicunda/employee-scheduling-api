@@ -11,7 +11,7 @@ dotenv.config({silent: process.env.NODE_ENV !== 'development'});
 
 import pkg from './package.json';
 import * as koa from './lib/config/koa';
-import config from './lib/config/config';
+import config from './lib/config/config.js';
 import couchbase from './lib/config/couchbase';
 
 const logger = require('mm-node-logger')(module);
