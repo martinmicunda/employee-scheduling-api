@@ -1,0 +1,18 @@
+{
+    "ERROR_ACCOUNT_ACTIVATION": "Aktivačný link je neplatný alebo mu vypršala platnosť.",
+    "ERROR_ACCOUNT_NOT_ACTIVATED": "Tento účet nie je aktivovaný. Pre viac informácií kontaktujte administrátora.",
+    "ERROR_CURRENT_PASSWORD": "Aktuálne heslo je nesprávne.",
+    "EMAIL_HI": "Dobrý deň",
+    "EMAIL_THANKS": "S pozdravom",
+    "EMAIL_WELCOME": "Vitajte v %s",
+    "EMAIL_SIGNATURE": "%s Team",
+    "EMAIL_COPYRIGHT": "Všetky práva vyhradené.",
+    "EMAIL_PASSWORD_RESET_SUMMARY": "Informačný e-mail o tom, ako obnoviť heslo.",
+    "EMAIL_PASSWORD_RESET_BODY": "Dostali sme žiadosť o resetovanie hesla k vášmu účtu! Prosím, kliknite na tlačidlo nižšie pre nastavenie nového hesla:",
+    "EMAIL_PASSWORD_RESET_FOOTER": "Ak ste nepožiadali o zmenu hesla, ignorujte prosím túto správu! Vaše heslo nebude zmenené a môžete odstrániť tento e-mail.",
+    "EMAIL_PASSWORD_RESET_BUTTON": "Nastaviť Nové Heslo",
+    "EMAIL_PASSWORD_ACTIVATION_SUMMARY": "Informačný e-mail o tom, ako aktivovať %s účet.",
+    "EMAIL_PASSWORD_ACTIVATION_BODY_1": "Váš účet bol úspešne vytvorený v %s.",
+    "EMAIL_PASSWORD_ACTIVATION_BODY_2": "Prosím, kliknite na tlačidlo nižšie pre aktiváciu vášho účtu a nastavenia hesla.",
+    "EMAIL_PASSWORD_ACTIVATION_BUTTON": "Aktivovať Účet"
+}

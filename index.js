@@ -10,7 +10,7 @@ import dotenv from 'dotenv';
 dotenv.config({silent: process.env.NODE_ENV !== 'development'});
 
 import pkg from './package.json';
-import * as koa from './lib/config/koa';
+import koa from './lib/config/koa';
 import config from './lib/config/config.js';
 import couchbase from './lib/config/couchbase';
 

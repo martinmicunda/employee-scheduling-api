@@ -73,8 +73,8 @@
     "nodemailer-sendgrid-transport": "0.2.0",
     "dotenv": "1.2.0",
     "bluebird": "2.10.2",
-    "password-generator": "2.0.2",
-    "moment": "2.10.6"
+    "moment": "2.10.6",
+    "koa-i18n": "1.1.2"
   },
   "devDependencies": {
     "nsp": "1.1.0",

@@ -1,0 +1,18 @@
+{
+	"ERROR_ACCOUNT_ACTIVATION": "The account activation link is invalid or has expired.",
+	"ERROR_ACCOUNT_NOT_ACTIVATED": "The account is not activated. Please contact the site administrator.",
+	"ERROR_CURRENT_PASSWORD": "The current password is incorrect.",
+	"EMAIL_HI": "Hi",
+	"EMAIL_THANKS": "Thanks",
+    "EMAIL_WELCOME": "Welcome to %s",
+	"EMAIL_SIGNATURE": "The %s Team",
+    "EMAIL_COPYRIGHT": "All Rights Reserved.",
+    "EMAIL_PASSWORD_RESET_SUMMARY": "An information on how to reset password.",
+	"EMAIL_PASSWORD_RESET_BODY": "We have received a request to reset your password for your account! Please click the button below to set a new password:",
+	"EMAIL_PASSWORD_RESET_FOOTER": "If you didn't ask to change your password, please ignore this message! Your password will not be reset and you can delete this email.",
+	"EMAIL_PASSWORD_RESET_BUTTON": "Set a New Password",
+    "EMAIL_PASSWORD_ACTIVATION_SUMMARY": "An information on how to activate the %s account.",
+    "EMAIL_PASSWORD_ACTIVATION_BODY_1": "An account has been created for you at the %s.",
+    "EMAIL_PASSWORD_ACTIVATION_BODY_2": "Please click the button below to activate your account and set your password.",
+    "EMAIL_PASSWORD_ACTIVATION_BUTTON": "Activate your Account"
+}
