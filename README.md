@@ -35,6 +35,7 @@ An API component for [Employee Scheduling](https://github.com/martinmicunda/empl
   * [Couchbase Database](http://www.couchbase.com/) (a highly scalable distributed KV-Store and Document Database) with [N1QL](http://developer.couchbase.com/guides-and-references) queries
   * Internationalization and localization with [i18n-node-2](https://github.com/jeresig/i18n-node-2)
   * Transactional emails with [Nodemailer](http://nodemailer.com) and [SendGrid](https://sendgrid.com)
+  * JSON Web Token ([JWT](http://jwt.io)) authentication
 
 ##<a name="installation-and-configuration"></a>Installation & Configuration
 ###<a name="platform-and-tools"></a>Platform & Tools
