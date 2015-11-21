@@ -7,6 +7,8 @@
     "EMAIL_WELCOME": "Vitajte v %s",
     "EMAIL_SIGNATURE": "%s Team",
     "EMAIL_COPYRIGHT": "Všetky práva vyhradené.",
+    "EMAIL_PASSWORD_RESET": "Zmena Hesla",
+    "EMAIL_ACCOUNT_ACTIVATION": "Aktivácia Účtu",
     "EMAIL_PASSWORD_RESET_SUMMARY": "Informačný e-mail o tom, ako obnoviť heslo.",
     "EMAIL_PASSWORD_RESET_BODY": "Dostali sme žiadosť o resetovanie hesla k vášmu účtu! Prosím, kliknite na tlačidlo nižšie pre nastavenie nového hesla:",
     "EMAIL_PASSWORD_RESET_FOOTER": "Ak ste nepožiadali o zmenu hesla, ignorujte prosím túto správu! Vaše heslo nebude zmenené a môžete odstrániť tento e-mail.",

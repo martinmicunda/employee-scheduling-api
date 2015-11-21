@@ -7,6 +7,8 @@
     "EMAIL_WELCOME": "Welcome to %s",
 	"EMAIL_SIGNATURE": "The %s Team",
     "EMAIL_COPYRIGHT": "All Rights Reserved.",
+    "EMAIL_PASSWORD_RESET": "Password Reset",
+    "EMAIL_ACCOUNT_ACTIVATION": "Account Activation",
     "EMAIL_PASSWORD_RESET_SUMMARY": "An information on how to reset password.",
 	"EMAIL_PASSWORD_RESET_BODY": "We have received a request to reset your password for your account! Please click the button below to set a new password:",
 	"EMAIL_PASSWORD_RESET_FOOTER": "If you didn't ask to change your password, please ignore this message! Your password will not be reset and you can delete this email.",
