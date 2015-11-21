@@ -32,8 +32,9 @@ An API component for [Employee Scheduling](https://github.com/martinmicunda/empl
 
 ## Features
   * Use ES6/ES7
-  * Couchbase Database (a highly scalable distributed KV-Store and Document Database) with N1QL queries
+  * [Couchbase Database](http://www.couchbase.com/) (a highly scalable distributed KV-Store and Document Database) with [N1QL](http://developer.couchbase.com/guides-and-references) queries
   * Internationalization and localization with [i18n-node-2](https://github.com/jeresig/i18n-node-2)
+  * Transactional emails with [Nodemailer](http://nodemailer.com) and [SendGrid](https://sendgrid.com)
 
 ##<a name="installation-and-configuration"></a>Installation & Configuration
 ###<a name="platform-and-tools"></a>Platform & Tools
