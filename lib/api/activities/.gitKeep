@@ -1,0 +1,11 @@
+{
+  "id": "1a1a1a1a1a1",
+  "userId": "1u1u1u1u1u1",
+  "timeCreated": 1342827430000,
+  "type": ...,
+  "action": ...,
+  "data": {}
+}
+
+// https://avocado.io/guacamole/avocado-api#api-activity-models
+// these activities should be only store in database for certain time e.g. three weeks
