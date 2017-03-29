@@ -11,7 +11,7 @@ Employee Scheduling API
 [![Code Climate](https://codeclimate.com/github/martinmicunda/employee-scheduling-api/badges/gpa.svg)](https://codeclimate.com/github/martinmicunda/employee-scheduling-api)
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 
-**Note: :warning: This project is under development.**
+**:warning: The beta version is located at [schedulino.com](https://schedulino.com) :warning:**
 
 An API component for [Employee Scheduling](https://github.com/martinmicunda/employee-scheduling) application that makes employee scheduling and management easy, fast and mobile. The UI component for this application can be found [here](https://github.com/martinmicunda/employee-scheduling-ui). I wrote a few blog posts about this project and they can be found on my [blog](http://martinmicunda.com).
 
